@@ -23,6 +23,7 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1 
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
+let g:Powerline_symbols = 'fancy'
 
 "left/right arrows to switch buffers in normal mode
 map <F10> :bn<cr>
