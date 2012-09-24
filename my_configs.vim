@@ -10,6 +10,7 @@ set number
 
 " Guifont
 set guifont=Monospace\ 10
+set guifont=Inconsolata\ Medium\ 10
 
 " For Awesome
 autocmd VimEnter * NERDTree
@@ -29,4 +30,5 @@ let g:Powerline_symbols = 'fancy'
 map <F10> :bn<cr>
 map <F11> :bp<cr>
 
-colorscheme=peaksea
+colorscheme=monokai
+set background=dark
