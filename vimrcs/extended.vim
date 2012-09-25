@@ -8,13 +8,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => GUI related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark
 
 if has("gui_running")
-    colorscheme peaksea
-else
     colorscheme ir_black
 endif
+
+set background=dark
 
 " Set font according to system
 if has("mac") || has("macunix")
@@ -24,7 +23,7 @@ elseif has("win16") || has("win32")
     set gfn=Bitstream\ Vera\ Sans\ Mono:h10
 elseif has("linux")
     set gfn=Monospace\ 10
-    set shell=/bin/bash
+    set shell=/usr/bin/zsh
 endif
 
 " Open MacVim in fullscreen mode
@@ -63,7 +62,6 @@ endtry
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Smart mappings on the command line
 cno $h e ~/
-cno $d e ~/Desktop/
 cno $j e ./
 cno $c e <C-\>eCurrentFileDir("e")<cr>
 
@@ -95,14 +93,11 @@ vnoremap $$ <esc>`>a"<esc>`<i"<esc>
 vnoremap $q <esc>`>a'<esc>`<i'<esc>
 vnoremap $e <esc>`>a"<esc>`<i"<esc>
 
-" Map auto complete of (, ", ', [
+" Map auto complete of (, ", ', [ BUT *not* < >
 inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
 inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $t <><esc>i
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
