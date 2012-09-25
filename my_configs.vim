@@ -20,7 +20,7 @@ set number
 " Inconsolata, Available via googling.
 set guifont=Inconsolata\ Medium\ 10
 
-" For Awesome (Dave's contributions
+" For Awesome (Dave's contributions)
 autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
 autocmd VimEnter * wincmd p              " Not actually sure what this does, credits to Dave for whatever it is.
 
