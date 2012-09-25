@@ -1,3 +1,11 @@
+"
+" File: my_configs.vim
+" Author: Leo Adamek ( Lima Echo Oscar [at] Alpha Delta Alpha Mike Echo Kilo [dot] Mike Echo )
+" Contributors: 
+"   * David Havard ( -withheld- )
+" Modified: 2012-09-25 10:58:00
+"
+
 set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -27,7 +35,7 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 let g:Powerline_symbols = 'fancy'
 
-" left/right arrows to switch buffers in normal mode
+" F10/F11 to switch buffers in normal mode
 map <F10> :bn<cr>
 map <F11> :bp<cr>
 
