@@ -36,8 +36,8 @@ let g:miniBufExplModSelTarget = 1
 let g:Powerline_symbols = 'fancy'
 
 " F10/F11 to switch buffers in normal mode
-map <F10> :bn<cr>
-map <F11> :bp<cr>
+map <F10> :bp<cr>
+map <F11> :bn<cr>
 
 " These configs actually need to go in ./vimrcs/extended.vim OR ./vimrcs/basic.vim
 " colorscheme=monokai
