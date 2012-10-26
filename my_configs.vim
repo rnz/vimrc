@@ -3,22 +3,15 @@
 " Author: Leo Adamek ( Lima Echo Oscar [at] Alpha Delta Alpha Mike Echo Kilo [dot] Mike Echo )
 " Contributors: 
 "   * David Havard ( -withheld- )
-" Modified: 2012-09-25 10:58:00
+" Modified: 2012-10-15 08:43:00
 "
-
-set runtimepath+=~/.vim_runtime
-
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
 
 " Optional Configs. 
 set number
-
-" Guifont
-" Inconsolata, Available via googling.
-set guifont=Inconsolata\ Medium\ 10
+set guifont=monospace\ 12
+try
+    set guifont=ProFont\ 10
+endtry
 
 " For Awesome (Dave's contributions)
 autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
@@ -33,11 +26,19 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1 
 let g:miniBufExplMapCTabSwitchBufs = 1 
 let g:miniBufExplModSelTarget = 1 
+
+" Vim Powerline Settings
 let g:Powerline_symbols = 'fancy'
 
 " F10/F11 to switch buffers in normal mode
 map <F10> :bp<cr>
 map <F11> :bn<cr>
+
+" F12 Toggles the Tag List
+map <F12> :TlistToggle<cr>
+
+" F9 Toggles NERD Tree
+map <F9> :NERDTreeToggle<cr>
 
 " These configs actually need to go in ./vimrcs/extended.vim OR ./vimrcs/basic.vim
 " colorscheme=monokai
