@@ -15,27 +15,22 @@ endtry
 
 " For Awesome (Dave's contributions)
 autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
-autocmd VimEnter * wincmd p              " Not actually sure what this does, credits to Dave for whatever it is.
+autocmd VimEnter * wincmd p              " Move us straight into the code.
 
-let Tlist_Use_Right_Window = 1           " Put the Tag list on the right-hand side.
-autocmd VimEnter * TlistToggle           " Open the Tag list as soon as Vim is opened
-let tlist_php_settings='php;f:function'  " Restrict the tags for PHP to functions.
+autocmd VimEnter * TagbarToggle           " Open the Tag list as soon as Vim is opened
 
 " MiniBufExplorer Settings
-let g:miniBufExplMapWindowNavVim = 1 
-let g:miniBufExplMapWindowNavArrows = 1 
-let g:miniBufExplMapCTabSwitchBufs = 1 
-let g:miniBufExplModSelTarget = 1 
-
-" Vim Powerline Settings
-let g:Powerline_symbols = 'fancy'
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
 
 " F10/F11 to switch buffers in normal mode
 map <F10> :bp<cr>
 map <F11> :bn<cr>
 
 " F12 Toggles the Tag List
-map <F12> :TlistToggle<cr>
+map <F12> :TagbarToggle<cr>
 
 " F9 Toggles NERD Tree
 map <F9> :NERDTreeToggle<cr>
