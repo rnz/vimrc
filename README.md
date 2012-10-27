@@ -49,9 +49,13 @@ Simply just do a git rebase!
     git pull --rebase
 
 
-# Screenshots
+## Screenshots
 
-_Screenshots Pending for Linux (gVim in GNOME) and Windows gVim_
+Windows, editing a demo PHP class:
+
+![Windows PHP](http://i.imgur.com/wyhhP.png)
+
+_Screenshots Pending for Linux (gVim in GNOME)_
 
 ## What plugins are included?
 
