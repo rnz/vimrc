@@ -10,6 +10,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 if has("gui_running")
+    colorscheme solarized
+else
     colorscheme ir_black
 endif
 
@@ -20,7 +22,7 @@ if has("mac") || has("macunix")
     set gfn=Menlo:h14
     set shell=/bin/bash
 elseif has("win16") || has("win32")
-    set gfn=Bitstream\ Vera\ Sans\ Mono:h10
+    set gfn=Consolas:h12:cANSI
 elseif has("linux")
     set gfn=Monospace\ 10
     set shell=/usr/bin/zsh
@@ -98,13 +100,6 @@ inoremap $1 ()<esc>i
 inoremap $2 []<esc>i
 inoremap $3 {}<esc>i
 inoremap $4 {<esc>o}<esc>O
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General abbreviations
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Omni complete functions

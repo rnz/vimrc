@@ -1,6 +1,6 @@
-# The Ultimate vimrc
+# The Ultimate `.vimrc`
 
-Over the last 8 years I have used and tweaked Vim. This is my Ultimate vimrc.
+Forked from amix/vimrc with custom modifications. This is my Ultimate `.vimrc`
 
 There are two versions:
 
@@ -15,21 +15,31 @@ The basic version is basically just one file and no plugins. You can check out [
 
 This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone git://github.com/LeoAdamek/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_basic_vimrc.sh
 
 
 ## How to install the Awesome version?
-The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
+The awesome version includes a lot of great plugins, configurations and colour schemes that make Vim a lot better. To install it simply do following:
 
-	git clone git://github.com/amix/vimrc.git ~/.vim_runtime
+	git clone git://github.com/LeoAdamek/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
 ## How to install on Windows?
 
-Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the installation instructions above. No special instructions needed ;-)
+* Install the [Github for Windows Client](http://windows.github.com) And go from there.
+* Run `cd ..\..` (from Documents\GitHub - go to your home folder.)
+* Run `git clone https://github.com/LeoAdamek/vimrc.git .vim_runtime`
+* Run `sh .vim_runtime/install_awesome_vimrc.sh` and enjoy! :+1: :neckbeard:
 
+## Recommended Fonts
+It's best to use a small, bitmap monospace font, readable at about 8pt, e.g.
+
+* Proggy Fonts
+* ProFont
+
+Believe it.
 
 ## How to update to latest version?
 
@@ -39,25 +49,15 @@ Simply just do a git rebase!
     git pull --rebase
 
 
-## Some screenshots
+# Screenshots
 
-Colors when editing a Python file:
-![Screenshot 1](http://files1.wedoist.com/e952fdb343b1e617b90d256e474d0370/as/screenshot_1.png)
-
-Opening recently opened files [mru.vim](https://github.com/vim-scripts/mru.vim):
-![Screenshot 2](http://files1.wedoist.com/1967b0e48af40e513d1a464e08196990/as/screenshot_2.png)
-
-[NERD Tree](https://github.com/scrooloose/nerdtree) plugin in a terminal window:
-![Screenshot 3](http://files1.wedoist.com/b1509d7ed9e9f357e8d04797f9fad67b/as/screenshot3.png)
-
-This vimrc even works on Windows!
-![Screenshot 4](http://files1.wedoist.com/4e85163d97b81422240c822c82022f2f/as/screenshot_4.png)
-
+_Screenshots Pending for Linux (gVim in GNOME) and Windows gVim_
 
 ## What plugins are included?
 
 I recommend reading the docs of these plugins to understand them better. Each of them provide a much better Vim experience!
-
+* [MiniBufExplorer][MiniBufExplorer]: replaces Vim's tabs, allows use of NERDTree and Tagbar.
+* [TagBar][TagBar]: View tags (classes, functions, constants, variables etc.) inside of the current buffer -- Powered by ctags, not Windows compatible :-1:
 * [pathogen.vim](https://github.com/tpope/vim-pathogen): Manages the runtime path of the plugins
 * [YankRing](https://github.com/vim-scripts/YankRing.vim): Maintains a history of previous yanks, changes and deletes
 * [snipMate.vim](https://github.com/garbas/vim-snipmate): snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
@@ -72,8 +72,8 @@ I recommend reading the docs of these plugins to understand them better. Each of
 
 ## What color schemes are included?
 
-* [peaksea](https://github.com/vim-scripts/peaksea): My favorite!
-* [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
+* [peaksea](https://github.com/vim-scripts/peaksea)
+* [vim-colors-solarizd](https://github.com/altercation/vim-colors-solarized) __Recommended.__
 * [vim-irblack](https://github.com/wgibbs/vim-irblack)
 * [mayansmoke](https://github.com/vim-scripts/mayansmoke)
 * [vim-pyte](https://github.com/therubymug/vim-pyte)
@@ -88,22 +88,9 @@ I recommend reading the docs of these plugins to understand them better. Each of
 
 
 ## How to include your own stuff?
-
-After you have installed the setup you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
-
-	~/.vim_runtime (master)> cat my_configs.vim
-	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
-	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
-
-You can also install your own plugins, for instance, via pathogen we can install [vim-rails](https://github.com/tpope/vim-rails):
-
-	cd ~/.vim_runtime
-	git clone git://github.com/tpope/vim-rails.git sources_plugins/vim-rails
-	
-Now you have vim-rails installed ;-)
-
-
-## Key Mappings
+    
+    * Your own configs -- Put them in `~/.vim_runtime/my_configs.vim`
+    * Extra Plugin     -- Using [Pathogen][pathogen] Just put them in `~/.vim_runtime/sources_forked/` or `~/.vim_runtime/sources_non_forked`
 
 ### Plugin related mappings
 
@@ -210,12 +197,6 @@ Quickly insert parenthesis/brackets/etc.:
     inoremap $4 {<esc>o}<esc>O
     inoremap $q ''<esc>i
     inoremap $e ""<esc>i
-    inoremap $t <><esc>i
-
-Insert the current date and time (useful for timestamps):
-
-    iab xdate <c-r>=strftime("%d/%m/%y %H:%M:%S")<cr>
-
 
 ### Visual mode mappings
 

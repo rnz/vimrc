@@ -8,9 +8,10 @@
 
 " Optional Configs. 
 set number
-set guifont=monospace\ 12
-try
-    set guifont=ProFont\ 10
+if has("win16") || has("win32")
+    set gfn=Consolas:h12:cANSI
+else
+    set guifont=monospace\ 12
 endtry
 
 " For Awesome (Dave's contributions)
