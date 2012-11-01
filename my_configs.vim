@@ -45,8 +45,3 @@ set nowrap
 
 " Optional, use context sensitive spell-check.
 set spl=en_gb spell
-
-try
-    source ~/.vim_runtime/blogit.vim
-catch
-endtry
