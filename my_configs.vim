@@ -45,3 +45,6 @@ set nowrap
 
 " Optional, use context sensitive spell-check.
 set spl=en_gb spell
+
+" Optional, use the included thesaurus.
+set thesaurus+=$HOME/.vim_runtime/data/english_thesaurus.txt

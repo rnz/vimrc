@@ -7,3 +7,6 @@
 [submodule "sources_forked/minibufexplorer"]
 	path = sources_forked/minibufexplorer
 	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "sources_forked/vim-scala"]
+	path = sources_forked/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
