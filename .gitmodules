@@ -10,3 +10,12 @@
 [submodule "sources_forked/vim-scala"]
 	path = sources_forked/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "sources_forked/vim-tomorrow"]
+	path = sources_forked/vim-tomorrow
+	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule "sources_forked/vim-yard"]
+	path = sources_forked/vim-yard
+	url = https://github.com/postmodern/vim-yard.git
+[submodule "sources_forked/sonictemplate"]
+	path = sources_forked/sonictemplate
+	url = https://github.com/mattn/sonictemplate-vim.git

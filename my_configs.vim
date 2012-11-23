@@ -8,11 +8,7 @@
 
 " Optional Configs. 
 set number
-if has("win16") || has("win32")
-    set gfn=Consolas:h12:cANSI
-else
-    set guifont=monospace\ 12
-endtry
+set guifont=ProFont\ 8
 
 " For Awesome (Dave's contributions)
 autocmd VimEnter * NERDTree              " Open the NERDTree with Vim

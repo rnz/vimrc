@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/home/leo/Development/src/explorecms'
 let g:netrw_dirhist_2='/home/leo/Development/src/Travelzen/components/com_travelzen'
 let g:netrw_dirhist_3='/home/leo/Development/src/Travelzen'
 let g:netrw_dirhist_4='/home/leo/Development/src/travelzen_new'
+let g:netrw_dirhist_5='/home/leo/Development/src/travelzen_new/administrator/components/com_zenholidays/models'
