@@ -19,3 +19,6 @@
 [submodule "sources_forked/sonictemplate"]
 	path = sources_forked/sonictemplate
 	url = https://github.com/mattn/sonictemplate-vim.git
+[submodule "sources_forked/jedi-vim"]
+	path = sources_forked/jedi-vim
+	url = https://github.com/davidhalter/jedi-vim.git
