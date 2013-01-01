@@ -22,3 +22,6 @@
 [submodule "sources_forked/jedi-vim"]
 	path = sources_forked/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "sources_forked/vim-javascript"]
+	path = sources_forked/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git

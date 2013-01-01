@@ -8,13 +8,13 @@
 
 " Optional Configs. 
 set number
-set guifont=ProFont\ 8
+set guifont=DejaVu_Sans_Mono:h10:cANSI
 
 " For Awesome (Dave's contributions)
-autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
-autocmd VimEnter * wincmd p              " Move us straight into the code.
-
-autocmd VimEnter * TagbarToggle           " Open the Tag list as soon as Vim is opened
+" autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
+" autocmd VimEnter * wincmd p              " Move us straight into the code.
+" 
+" autocmd VimEnter * TagbarToggle           " Open the Tag list as soon as Vim is opened
 
 " MiniBufExplorer Settings
 let g:miniBufExplMapWindowNavVim = 1
