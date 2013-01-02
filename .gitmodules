@@ -25,3 +25,6 @@
 [submodule "sources_forked/vim-javascript"]
 	path = sources_forked/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "sources_forked/tabular"]
+	path = sources_forked/tabular
+	url = https://github.com/godlygeek/tabular.git
