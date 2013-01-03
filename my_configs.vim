@@ -8,7 +8,12 @@
 
 " Optional Configs. 
 set number
-set guifont=DejaVu_Sans_Mono:h10:cANSI
+
+if has('win_32')
+    set guifont=DejaVu_Sans_Mono:h10:cANSI
+else
+    set guifont=DejaVi_Sans_Mono\ 10
+endif
 
 " For Awesome (Dave's contributions)
 " autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
