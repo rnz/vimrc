@@ -33,4 +33,7 @@
 	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "sources_forked/powerline"]
 	path = sources_forked/powerline
-	url = https://github.com/Lokaltog/vim-powerline.git
+	url = https://github.com/Lokaltog/powerline.git
+[submodule "sources_forked/vim-powerline"]
+	path = sources_forked/vim-powerline
+	url = https://github.com/Lokaltog/powerline.git
