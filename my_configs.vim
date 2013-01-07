@@ -12,12 +12,12 @@ set number
 if has('win_32')
     set guifont=DejaVu_Sans_Mono:h10:cANSI
 else
-    set guifont=DejaVi_Sans_Mono\ 10
+    set guifont=DejaVu\ Sans\ Mono\ 10
 endif
 
 " For Awesome (Dave's contributions)
-" autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
-" autocmd VimEnter * wincmd p              " Move us straight into the code.
+autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
+autocmd VimEnter * wincmd p              " Move us straight into the code.
 " 
 " autocmd VimEnter * TagbarToggle           " Open the Tag list as soon as Vim is opened
 
@@ -26,6 +26,14 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
+
+"
+" Solarized options
+let g:solarized_italic=1    "default value is 1
+let g:solarized_contrast="high"    "default value is normal
+let g:solarized_hitrail=0    "default value is 0
+syntax enable
+set background=dark
 
 " F10/F11 to switch buffers in normal mode
 map <F10> :bp<cr>

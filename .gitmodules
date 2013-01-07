@@ -28,3 +28,6 @@
 [submodule "sources_forked/tabular"]
 	path = sources_forked/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule "sources_forked/indent-guides"]
+	path = sources_forked/indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
