@@ -12,7 +12,8 @@
 if has("gui_running")
     colorscheme solarized
 else
-    colorscheme ir_black
+"    colorscheme ir_black
+    colorscheme elisex
 endif
 
 set background=dark

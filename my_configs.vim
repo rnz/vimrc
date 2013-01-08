@@ -7,18 +7,19 @@
 "
 
 " Optional Configs. 
-set number
+set nonumber
+
+cd ~/workspace
 
 if has('win_32')
-    set guifont=DejaVu_Sans_Mono:h10:cANSI
+    set guifont=Droid_Sans_Mono:h10:cANSI
 else
-    set guifont=DejaVu\ Sans\ Mono\ 10
+    set guifont=Droid\ Sans\ Mono\ 10
 endif
 
 " For Awesome (Dave's contributions)
 autocmd VimEnter * NERDTree              " Open the NERDTree with Vim
 autocmd VimEnter * wincmd p              " Move us straight into the code.
-" 
 " autocmd VimEnter * TagbarToggle           " Open the Tag list as soon as Vim is opened
 
 " MiniBufExplorer Settings
@@ -53,7 +54,11 @@ map <F9> :NERDTreeToggle<cr>
 set nowrap
 
 " Optional, use context sensitive spell-check.
-set spl=en_gb spell
+"set spl=en_gb spell
 
 " Optional, use the included thesaurus.
-set thesaurus+=$HOME/.vim_runtime/data/english_thesaurus.txt
+"set thesaurus+=$HOME/.vim_runtime/data/english_thesaurus.txt
+
+filetype plugin indent on
+
+set cursorline
